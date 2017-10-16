@@ -5,8 +5,6 @@ WORKDIR /opt/app
 
 COPY . .
 
-RUN bundle install
-
-ENTRYPOINT setup_container.sh
+VOLUME /opt/app
 
 CMD bundle exec rails server
