@@ -7,4 +7,6 @@ COPY . .
 
 RUN bundle install
 
+ENTRYPOINT setup_container.sh
+
 CMD bundle exec rails server
