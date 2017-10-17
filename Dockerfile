@@ -1,10 +1,12 @@
 FROM ruby
 
-RUN mkdir -p /opt/app
+RUN ["mkdir", "-p", "/opt/app"]
 WORKDIR /opt/app
+
+ENV RAILS_ENV "development"
 
 COPY . .
 
-VOLUME /opt/app
+RUN ["bundle", "install"]
 
-CMD bundle exec rails server
+CMD ["bundle", "exec", "rails", "server"]
