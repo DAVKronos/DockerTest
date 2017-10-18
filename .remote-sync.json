@@ -10,8 +10,8 @@
     "Dockerfile",
     ".git/**"
   ],
-  "username": "foo",
-  "password": "bar",
+  "username": "kronos",
+  "password": "pass",
   "watch": [],
   "transport": "scp",
   "target": "/share"
