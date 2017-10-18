@@ -7,11 +7,6 @@ services:
       - 3000:3000
     volumes:
       - sftp_files:/opt/app
-      - type: volume
-        source: mydata
-        target: /opt/app
-        volume:
-          nocopy: false
     depends_on:
       - db
   db:
