@@ -18,7 +18,7 @@ services:
     ports:
       - "2222:22"
     volumes:
-      - sftp_files:/opt/app
+      - sftp_files:/home/kronos/share
 volumes:
   sftp_files:
     driver: local
