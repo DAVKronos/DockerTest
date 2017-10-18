@@ -9,4 +9,8 @@ COPY . .
 
 RUN ["bundle", "install"]
 
+RUN ["useradd", "kronos"]
+RUN chown -R kronos /opt/app
+USER kronos
+
 CMD ["bundle", "exec", "rails", "server"]

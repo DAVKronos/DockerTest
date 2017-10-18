@@ -6,6 +6,8 @@
   "port": "2222",
   "ignore": [
     ".remote-sync.json",
+    "docker-compose.yml",
+    "Dockerfile",
     ".git/**"
   ],
   "username": "foo",
