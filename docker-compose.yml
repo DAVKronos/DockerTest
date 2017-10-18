@@ -12,7 +12,7 @@ services:
     image: postgres
   ftp: # for development
     image: atmoz/sftp
-    command: kronos:pass
+    command: kronos:pass:2000
     depends_on:
       - web
     ports:
