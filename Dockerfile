@@ -1,17 +1,18 @@
 FROM ruby
 
+# Install gems
+WORKDIR /opt/app
+COPY Gemfile* .
+RUN ["bundle", "install"]
+
 # Setup environment
 ENV RAILS_ENV "development"
 
 # Create directory
-RUN ["mkdir", "-p", "/opt/app"]
-WORKDIR /opt/app
+#RUN ["mkdir", "-p", "/opt/app"]
 
 # Copy files
 COPY . .
-
-# Install files
-RUN ["bundle", "install"]
 
 # Setup user permissions
 RUN ["useradd", "-o", "-u", "2000", "kronos"]
