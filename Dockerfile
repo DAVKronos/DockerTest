@@ -1,15 +1,13 @@
 FROM ruby
 
 # Install gems
+RUN ["mkdir", "-p", "/opt/app"]
 WORKDIR /opt/app
-COPY Gemfile* .
+COPY Gemfile* ./
 RUN ["bundle", "install"]
 
 # Setup environment
 ENV RAILS_ENV "development"
-
-# Create directory
-#RUN ["mkdir", "-p", "/opt/app"]
 
 # Copy files
 COPY . .
