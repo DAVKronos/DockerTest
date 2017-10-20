@@ -14,6 +14,8 @@ ENV RAILS_ENV "development"
 # Copy files
 COPY . .
 
+RUN ["git", "checkout", "--", "."]
+
 # Setup user permissions
 RUN ["useradd", "-o", "-u", "2000", "kronos"]
 RUN ["chown", "-R", "kronos", "/opt/app"]
