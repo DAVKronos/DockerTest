@@ -15,13 +15,14 @@ gem 'puma', '~> 3.7'
 gem 'sass-rails', '~> 5.0'
 
 
-
 # Use Devise for user authentication
 gem 'devise'
 # Use Cancancan for user authorization
 gem 'cancancan', '~> 2.0'
 # Use Bootstrap as CSS framework
 gem 'bootstrap', '~> 4.0.0.beta2.1'
+# Bootstrap requires JQuery
+gem 'jquery-rails'
 
 
 
