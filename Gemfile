@@ -23,6 +23,8 @@ gem 'cancancan', '~> 2.0'
 gem 'bootstrap', '~> 4.0.0.beta2.1'
 # Bootstrap requires JQuery
 gem 'jquery-rails'
+# Use HAML for views
+gem 'haml-rails', '~> 1.0'
 
 
 
