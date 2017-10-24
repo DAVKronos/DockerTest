@@ -43,4 +43,8 @@ end
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
   gem 'web-console', '>= 3.3.0'
+
+  # Add javascript runtime for development version of bootstrap
+  gem 'execjs'
+  gem 'therubyracer', :platforms => :ruby
 end
