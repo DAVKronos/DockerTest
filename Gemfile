@@ -14,8 +14,17 @@ gem 'puma', '~> 3.7'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 
+
+
 # Use Devise for user authentication
 gem 'devise'
+# Use Cancancan for user authorization
+gem 'cancancan', '~> 2.0'
+# Use Bootstrap as CSS framework
+gem 'bootstrap', '~> 4.0.0.beta2.1'
+
+
+
 
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
 gem 'turbolinks', '~> 5' # require turbolinks
