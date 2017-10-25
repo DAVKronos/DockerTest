@@ -10,5 +10,7 @@
     %link{:href => "//fonts.googleapis.com/css?family=Droid+Serif:400,700,700italic,400italic|Roboto", :rel => "stylesheet", :type => "text/css"}
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
   %body
-    %h1 Application
-    = yield
+    .container
+      = render 'layouts/header'
+      %h1 Application
+      = yield

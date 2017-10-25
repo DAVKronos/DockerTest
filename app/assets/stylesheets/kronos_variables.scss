@@ -1,0 +1,49 @@
+/* boostrap custom variables
+ *
+ * See http://getbootstrap.com/customize/#typography for all variables
+ */
+
+// Colors
+$brand-primary:         #369866;
+$brand-secondary:       #76C8A6;
+
+// Scaffolding
+$body-bg:               #f5f5f5;
+$link-color:            $brand-primary;
+$link-hover-color:      darken($link-color, 15%);
+$link-hover-decoration: underline;
+
+// Typography
+$font-family-sans-serif:  "Roboto", Helvetica, Arial, sans-serif;
+$font-family-serif:       "Droid Serif", Georgia, "Times New Roman", Times, serif;
+$font-family-monospace :  Menlo, Monaco, Consolas, "Courier New", monospace;
+$headings-font-family:    $font-family-serif;
+
+// Iconography
+// $icon-font-path:        '../fonts/';
+
+// Components
+$border-radius-base: 2px;
+
+// Tables
+// Buttons
+// Forms
+// Dropdowns
+// Media queries breakpoints
+// Grid system
+// Container sizes
+
+// Navbar
+// Panels
+// Navs
+// Tabs
+// Pills
+// Pagination
+// Pager
+// Jumbotron
+// Form states and alerts
+// Tooltips
+// Popovers
+// Labels
+// Modals
+// Alerts

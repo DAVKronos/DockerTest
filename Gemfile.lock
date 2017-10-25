@@ -73,7 +73,7 @@ GEM
     erubis (2.7.0)
     execjs (2.7.0)
     ffi (1.9.18)
-    globalid (0.4.0)
+    globalid (0.4.1)
       activesupport (>= 4.2.0)
     haml (5.0.4)
       temple (>= 0.8.0)
@@ -117,6 +117,11 @@ GEM
     nio4r (2.1.0)
     nokogiri (1.8.1)
       mini_portile2 (~> 2.3.0)
+    octicons (5.0.5)
+      nokogiri (>= 1.6.3.1)
+    octicons_helper (4.0.7)
+      octicons
+      rails
     orm_adapter (0.5.0)
     pg (0.21.0)
     popper_js (1.12.5)
@@ -148,7 +153,7 @@ GEM
       method_source
       rake (>= 0.8.7)
       thor (>= 0.18.1, < 2.0)
-    rake (12.1.0)
+    rake (12.2.1)
     rb-fsevent (0.10.2)
     rb-inotify (0.9.10)
       ffi (>= 0.5.0, < 2)
@@ -220,6 +225,7 @@ DEPENDENCIES
   jbuilder (~> 2.5)
   jquery-rails
   logidze
+  octicons_helper
   pg (~> 0.18)
   puma (~> 3.7)
   rails (~> 5.1.4)

@@ -1,0 +1,28 @@
+.kronos-navbar {
+  background-color: $brand-primary;
+  padding: 0px !important;
+}
+
+.kronos-navbar navbar-toggler {
+  color: #fff;
+}
+
+.kronos-navbar .navbar-brand {
+  color: #fff;
+}
+
+.kronos-navbar .navbar-text {
+  color: #fff;
+}
+
+.kronos-navbar .navbar-nav .nav-link {
+  color: #fff;
+}
+
+.kronos-navbar .nav-item.active .nav-link {
+  background-color: lighten($brand-primary, 5%);
+}
+
+.kronos-navbar .nav-item:hover .nav-link {
+  background-color: lighten($brand-primary, 5%);
+}

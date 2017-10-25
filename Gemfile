@@ -21,6 +21,8 @@ gem 'devise'
 gem 'cancancan', '~> 2.0'
 # Use Bootstrap as CSS framework
 gem 'bootstrap', '~> 4.0.0.beta2.1'
+# Use Octicons as icon framework
+gem 'octicons_helper'
 # Bootstrap requires JQuery
 gem 'jquery-rails'
 # Use HAML for views
