@@ -1,31 +1,32 @@
 %header
   %nav.navbar.navbar-expand.kronos-navbar
-    %a.mx-auto.navbar-brand{:href => "#"}
-      .d-sm-none.d-md-none.d-lg-block.d-xl-block
+    %span.mx-auto.navbar-brand
+      .d-none.d-sm-none.d-md-none.d-lg-block.d-xl-block
         =image_tag "kronos_logo_large.png"
-      .d-sm-none.d-md-block.d-lg-none.d-xl-none
+      .d-none.d-sm-none.d-md-block.d-lg-none.d-xl-none
         =image_tag "kronos_logo_medium.png"
-  %nav.navbar.navbar-expand-md.kronos-navbar
-    %button.navbar-toggler.navbar-toggler-right{:type => "button", "data-toggle" => "collapse", "data-target" => "#navbarNav", "aria-expanded" => "false", "aria-label" => "Toggle naviation"}
-      %span.navbar-toggler-icon
-      =octicon "alert", :height => 32,  :class => "right left", :"aria-label" => "hi"
+  %nav.navbar.navbar-expand-lg.kronos-navbar
+    %a.navbar-brand.nav-link{:href => "#"}
+      .d-none.d-sm-none.d-md-none.d-lg-block.d-xl-block
+        Home
+      .d-block.d-sm-block.d-md-block.d-lg-none.d-xl-none
+        Kronos
+    %button.navbar-toggler{:type => "button", "data-toggle" => "collapse", "data-target" => "#navbarNav", "aria-expanded" => "false", "aria-label" => "Toggle naviation"}
+      =kIcon "three-bars", :class => "kronos-icon-white"
     #navbarNav.collapse.navbar-collapse
       %ul.navbar-nav
-        %li.nav-item.active
-          %a.nav-link{:href => "#"}
-            Home
         %li.nav-item
           %a.nav-link{:href => "#"}
             Vereniging
-            %span.glyphicon.glyphicon-triangle-bottom{"aria-hiden" => "true"}
+            =kIcon "triangle-down"
         %li.nav-item
           %a.nav-link{:href => "#"}
             Trainingen
-            %span.glyphicon.glyphicon-triangle-bottom{"aria-hiden" => "true"}
+            =kIcon "triangle-down"
         %li.nav-item
           %a.nav-link{:href => "#"}
             Wedstrijden
-            %span.glyphicon.glyphicon-triangle-bottom{"aria-hiden" => "true"}
+            =kIcon "triangle-down"
         %li.nav-item
           %a.nav-link{:href => "#"}
             Agenda
@@ -38,7 +39,8 @@
         %li.nav-item
           %a.nav-link{:href => "#"}
             Contact
-      %ul.navbar-nav.ml-auto
-        %li.nav-item
-          %a.nav-link{:href => "#"}
-            Log in
+    %ul.navbar-nav.ml-auto
+      %li.nav-item
+        %a.nav-link{:href => "#"}
+          Log in
+          =kIcon "triangle-down"

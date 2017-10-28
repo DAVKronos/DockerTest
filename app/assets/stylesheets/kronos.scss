@@ -8,6 +8,7 @@
 }
 
 .kronos-navbar .navbar-brand {
+//  padding-left: 15px;
   color: #fff;
 }
 
@@ -17,12 +18,33 @@
 
 .kronos-navbar .navbar-nav .nav-link {
   color: #fff;
+  font-size: 14px;
+  padding: 15px !important;
 }
 
 .kronos-navbar .nav-item.active .nav-link {
-  background-color: lighten($brand-primary, 5%);
+  background-color: lighten($brand-primary, 10%);
 }
 
 .kronos-navbar .nav-item:hover .nav-link {
   background-color: lighten($brand-primary, 5%);
+}
+
+.kronos-footer {
+  color: #fff;
+  background-color: $brand-primary;
+  font-size: 14px;
+}
+
+.kronos-footer a {
+  color: #fff;
+}
+
+.kronos-footer a:link {
+  color: #fff;
+}
+
+.kronos-icon {
+  height: 1em;
+  fill: currentColor;
 }
