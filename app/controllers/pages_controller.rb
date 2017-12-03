@@ -1,6 +1,11 @@
 class PagesController < ApplicationController
   before_action :set_page, only: [:show, :edit, :update, :destroy]
 
+  authorize_resource :class => false
+
+  def home
+  end
+
   # GET /pages
   def index
     @pages = Page.all

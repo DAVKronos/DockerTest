@@ -6,6 +6,8 @@ Rails.application.routes.draw do
     resources :pages
   end
 
+  root 'pages#home'
+
   # Retrieve JSON data
   constraints(format: 'json') do
   end
